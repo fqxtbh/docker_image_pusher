@@ -1,6 +1,13 @@
 nginx
-arm64v8
 centos
+ubuntu
+python
+mysql
+postgre
+redis
+pmm
+mongo
+alpine/java:11-jdk
 
 #支持私库
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
