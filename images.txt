@@ -4,7 +4,7 @@ ubuntu
 python
 mysql
 postgre
-redis
+redis:alpine
 pmm
 mongo
 alpine/java:11-jdk
