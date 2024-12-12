@@ -6,9 +6,8 @@ mysql
 redis:alpine
 alpine/java:11-jdk
 gcr.io/k8s-minikube/kicbase:v0.0.45
-pmm
-mongo
-
+node:20-slim
+nginx:alpine
 #支持私库
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
