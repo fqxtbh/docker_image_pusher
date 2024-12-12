@@ -3,12 +3,12 @@ centos
 ubuntu
 python
 mysql
-postgre
 redis:alpine
-pmm
-mongo
 alpine/java:11-jdk
 gcr.io/k8s-minikube/kicbase:v0.0.45
+postgre
+pmm
+mongo
 
 #支持私库
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
