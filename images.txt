@@ -22,7 +22,6 @@ registry.k8s.io/kube-controller-manager:v1.31.0
 pingcap/tidb
 pingcap/tidb-dashboard
 pingcap/tidb-monitor-initializer
-quay.io/prometheus-operator/prometheus-config-reloader
 grafana/grafana
 prom/prometheus
 pingcap/pd
