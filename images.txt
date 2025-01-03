@@ -19,6 +19,24 @@ registry.k8s.io/kube-apiserver:v1.31.0
 registry.k8s.io/etcd:3.5.15-0
 registry.k8s.io/pause:3.10
 registry.k8s.io/kube-controller-manager:v1.31.0
+pingcap/tidb
+pingcap/tidb-dashboard
+pingcap/tidb-monitor-initializer
+pingcap/tidb-monitor-reloader
+quay.io/prometheus-operator/prometheus-config-reloader
+grafana/grafana
+prom/prometheus
+pingcap/pd
+pingcap/tikv
+prom/prometheus:v2.27.1
+grafana/grafana:7.5.11
+pingcap/tidb-monitor-initializer:v8.5.0
+pingcap/tidb-monitor-reloader:v1.0.1
+quay.io/prometheus-operator/prometheus-config-reloader:v0.49.0
+pingcap/tidb-dashboard:latest
+alpine:3.16.0
+pingcap/pd
+pingcap/tikv
 
 #支持指定架构
 --platform=linux/arm64
