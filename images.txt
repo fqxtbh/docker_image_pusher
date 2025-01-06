@@ -38,4 +38,4 @@ pingcap/pd:v8.5.0
 pingcap/tikv:v8.5.0
 
 #支持指定架构
---platform=linux/arm64
+--platform=linux/arm64 xiaoyaliu/alist
