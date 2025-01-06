@@ -45,7 +45,6 @@ pingcap/tikv:v8.5.0
 --platform=linux/arm64 python
 --platform=linux/arm64 mysql
 --platform=linux/arm64 redis:alpine
---platform=linux/arm64 alpine/java:11-jdk
 --platform=linux/arm64 node:20-slim
 --platform=linux/arm64 nginx:alpine
 --platform=linux/arm64 pingcap/tidb
