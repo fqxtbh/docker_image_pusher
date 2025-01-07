@@ -1,82 +1,81 @@
-nginx
-centos
-ubuntu
-python
-mysql
-redis:alpine
 alpine/java:11-jdk
-node:20-slim
-nginx:alpine
-pingcap/tidb
-#支持私库
+alpine:3.16.0
+busybox:1.26.2
+centos
 gcr.io/k8s-minikube/kicbase:v0.0.45
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 gcr.io/k8s-minikube/storage-provisioner:v5
-registry.k8s.io/kube-scheduler:v1.31.0
-registry.k8s.io/coredns/coredns:v1.11.1
-registry.k8s.io/kube-proxy:v1.31.0
-registry.k8s.io/kube-apiserver:v1.31.0
-registry.k8s.io/etcd:3.5.15-0
-registry.k8s.io/pause:3.10
-registry.k8s.io/kube-controller-manager:v1.31.0
+grafana/grafana
+grafana/grafana:7.5.11
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+mysql
+nginx
+nginx:alpine
+node:20-slim
+pingcap/pd
+pingcap/pd:v8.5.0
+pingcap/ticdc:v8.5.0
 pingcap/tidb
 pingcap/tidb:v8.5.0
 pingcap/tidb-dashboard
 pingcap/tidb-monitor-initializer
-grafana/grafana
-prom/prometheus
-pingcap/pd
-pingcap/tikv
-prom/prometheus:v2.27.1
-grafana/grafana:7.5.11
 pingcap/tidb-monitor-initializer:v8.5.0
 pingcap/tidb-monitor-reloader:v1.0.1
-quay.io/prometheus-operator/prometheus-config-reloader:v0.49.0
-pingcap/tidb-dashboard:latest
-alpine:3.16.0
-pingcap/pd:v8.5.0
-pingcap/tikv:v8.5.0
 pingcap/tidb-operator
 pingcap/tidb-operator:v1.6.1
+pingcap/tiflash:v8.5.0
+pingcap/tikv
+pingcap/tikv:v8.5.0
+pingcap/tiproxy:latest
+prom/prometheus
+prom/prometheus:v2.18.1
+prom/prometheus:v2.27.1
+python
+quay.io/prometheus-operator/prometheus-config-reloader:v0.49.0
+redis:alpine
+registry.k8s.io/coredns/coredns:v1.11.1
+registry.k8s.io/etcd:3.5.15-0
+registry.k8s.io/kube-apiserver:v1.31.0
+registry.k8s.io/kube-controller-manager:v1.31.0
+registry.k8s.io/kube-proxy:v1.31.0
+registry.k8s.io/kube-scheduler:v1.31.0
+registry.k8s.io/pause:3.10
+ubuntu
 
 #支持指定架构
---platform=linux/arm64 xiaoyaliu/alist
---platform=linux/arm64 nginx
+--platform=linux/arm64 alpine:3.16.0
 --platform=linux/arm64 centos
---platform=linux/arm64 ubuntu
---platform=linux/arm64 python
---platform=linux/arm64 mysql
---platform=linux/arm64 redis:alpine
---platform=linux/arm64 node:20-slim
---platform=linux/arm64 nginx:alpine
---platform=linux/arm64 pingcap/tidb
-#支持私库
 --platform=linux/arm64 gcr.io/k8s-minikube/kicbase:v0.0.45
---platform=linux/arm64 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 --platform=linux/arm64 gcr.io/k8s-minikube/storage-provisioner:v5
---platform=linux/arm64 registry.k8s.io/kube-scheduler:v1.31.0
---platform=linux/arm64 registry.k8s.io/coredns/coredns:v1.11.1
---platform=linux/arm64 registry.k8s.io/kube-proxy:v1.31.0
---platform=linux/arm64 registry.k8s.io/kube-apiserver:v1.31.0
---platform=linux/arm64 registry.k8s.io/etcd:3.5.15-0
---platform=linux/arm64 registry.k8s.io/pause:3.10
---platform=linux/arm64 registry.k8s.io/kube-controller-manager:v1.31.0
+--platform=linux/arm64 grafana/grafana
+--platform=linux/arm64 grafana/grafana:7.5.11
+--platform=linux/arm64 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+--platform=linux/arm64 mysql
+--platform=linux/arm64 nginx
+--platform=linux/arm64 nginx:alpine
+--platform=linux/arm64 node:20-slim
+--platform=linux/arm64 pingcap/pd
+--platform=linux/arm64 pingcap/pd:v8.5.0
 --platform=linux/arm64 pingcap/tidb
---platform=linux/arm64 pingcap/tidb:v8.5.0
 --platform=linux/arm64 pingcap/tidb-dashboard
 --platform=linux/arm64 pingcap/tidb-monitor-initializer
---platform=linux/arm64 grafana/grafana
---platform=linux/arm64 prom/prometheus
---platform=linux/arm64 pingcap/pd
---platform=linux/arm64 pingcap/tikv
---platform=linux/arm64 prom/prometheus:v2.27.1
---platform=linux/arm64 grafana/grafana:7.5.11
 --platform=linux/arm64 pingcap/tidb-monitor-initializer:v8.5.0
 --platform=linux/arm64 pingcap/tidb-monitor-reloader:v1.0.1
---platform=linux/arm64 quay.io/prometheus-operator/prometheus-config-reloader:v0.49.0
---platform=linux/arm64 pingcap/tidb-dashboard:latest
---platform=linux/arm64 alpine:3.16.0
---platform=linux/arm64 pingcap/pd:v8.5.0
---platform=linux/arm64 pingcap/tikv:v8.5.0
 --platform=linux/arm64 pingcap/tidb-operator
 --platform=linux/arm64 pingcap/tidb-operator:v1.6.1
+--platform=linux/arm64 pingcap/tidb:v8.5.0
+--platform=linux/arm64 pingcap/tikv
+--platform=linux/arm64 pingcap/tikv:v8.5.0
+--platform=linux/arm64 prom/prometheus
+--platform=linux/arm64 prom/prometheus:v2.27.1
+--platform=linux/arm64 python
+--platform=linux/arm64 quay.io/prometheus-operator/prometheus-config-reloader:v0.49.0
+--platform=linux/arm64 redis:alpine
+--platform=linux/arm64 registry.k8s.io/coredns/coredns:v1.11.1
+--platform=linux/arm64 registry.k8s.io/etcd:3.5.15-0
+--platform=linux/arm64 registry.k8s.io/kube-apiserver:v1.31.0
+--platform=linux/arm64 registry.k8s.io/kube-controller-manager:v1.31.0
+--platform=linux/arm64 registry.k8s.io/kube-proxy:v1.31.0
+--platform=linux/arm64 registry.k8s.io/kube-scheduler:v1.31.0
+--platform=linux/arm64 registry.k8s.io/pause:3.10
+--platform=linux/arm64 ubuntu
+--platform=linux/arm64 xiaoyaliu/alist
