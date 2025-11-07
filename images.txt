@@ -8,6 +8,7 @@ grafana/grafana
 grafana/grafana:7.5.11
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 mysql
+mysql:8
 nginx
 nginx:alpine
 node:20-slim
@@ -50,6 +51,7 @@ ubuntu
 --platform=linux/arm64 grafana/grafana:7.5.11
 --platform=linux/arm64 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 --platform=linux/arm64 mysql
+--platform=linux/arm64 mysql:8
 --platform=linux/arm64 nginx
 --platform=linux/arm64 nginx:alpine
 --platform=linux/arm64 node:20-slim
